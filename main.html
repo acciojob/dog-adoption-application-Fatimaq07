@@ -58,7 +58,7 @@
       margin-right: 10px;
     }
 
-    .submit-btn {
+    input[type="submit"] {
       margin-top: 25px;
       width: 100%;
       background-color: #44bd32;
@@ -71,7 +71,7 @@
       transition: background-color 0.3s ease;
     }
 
-    .submit-btn:hover {
+    input[type="submit"]:hover {
       background-color: #4cd137;
     }
   </style>
@@ -91,20 +91,18 @@
       <input type="text" id="address" name="address" placeholder="Address">
 
       <div class="checkbox-group">
-        <input type="checkbox" id="livedWithDog" name="livedWithDog" value="Have you ever lived with a Dog before?">
-        <label for="livedWithDog" style="display: inline;">Have you ever lived with a Dog before?</label>
+        <input type="checkbox" id="checkbox" name="livedWithDog" value="Have you ever lived with a Dog before?">
+        <label for="checkbox" style="display: inline;">Have you ever lived with a Dog before?</label>
       </div>
 
-      <label for="breeds">Please select your preferred breeds</label>
-      <select id="breeds" name="breeds" multiple>
+      <label for="multiSelect">Please select your preferred breeds</label>
+      <select id="multiSelect" name="breeds" multiple>
         <option value="Labrador">Labrador</option>
         <option value="German Shepherd">German Shepherd</option>
         <option value="Beagle">Beagle</option>
-        <option value="Poodle">Poodle</option>
-        <option value="Bulldog">Bulldog</option>
       </select>
 
-      <button type="submit" class="submit-btn">Submit</button>
+      <input type="submit" id="submit" value="Submit">
     </form>
   </div>
 
